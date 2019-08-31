@@ -1,0 +1,15 @@
+# top level directories
+sourcedir: /sfs/qumulo/qproject/cphg-millerlab/CAD_QTL/coronary_QTL/transcriptome
+refdir: /scratch/mk9uc/Reference_genomes
+############################################################
+#reference:
+  vcf:
+    hg38: $refdir/hg38/chr22.vcf"
+       
+# directory structure for input and output files
+datadirs:
+  bam: $sourcedir/mkdedup
+  bai: $sourcedir/mkdedup
+  verifybam: $sourcedir/verifybam_output
+  parse: $sourcedir/parse_output       #creates the summary of all the verifybam id output files
+  verifybamFinal: $sourcedir/final_out
