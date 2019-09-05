@@ -10,5 +10,5 @@ Snakemake based python script of verifybamID  that verifies whether the reads in
 
 #### To Run the script on cluster using this command 'modify cluster.json  parameters according to your cluster configuration 
 ```
-snakemake -j 999 --configfile config.yaml --use-conda --nolock --cluster-config cluster.json --cluster "sbatch -A {cluster.account} -p {cluster.partition}  -c {cluster.ncpus} -n {cluster.tasks}  -t {cluster.time} --mem {cluster.mem}"
+snakemake -j 999 --configfile config.yaml --use-conda --nolock --cluster-config cluster.json --cluster "sbatch -A {cluster.account} -p {cluster.partition}  -c {cluster.ncpus} -n {cluster.ntasks}  -t {cluster.time} --mem {cluster.mem}"
 ```
